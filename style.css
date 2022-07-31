@@ -1,3 +1,8 @@
+:root
+{
+    --cor-padrao: rgb(197, 0, 0);
+}
+
 
 body
 {
@@ -7,18 +12,19 @@ body
     gap: 2vh;
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(252, 225, 225);
 }
 header
 {
-    grid-row: 1/5;
-    grid-column: 1 ;
-    background: rgb(247, 134, 134);
+    grid-row: 2/5;
+    height:75%;
+    background:var(--cor-padrao);
 }
 main
 {
     grid-row: 5/17;
     grid-column: 1 ;
-    background: rgb(145, 134, 247);
+    background-image: radial-gradient(white,var(--cor-padrao));
     display: grid;
     grid-template-rows: repeat(10,1fr);
     grid-template-columns: repeat(10,1fr);
@@ -34,6 +40,28 @@ header > ul > li
 {
     list-style: none;
     width: 12.5%;
+    font-size:22px;
+    font-weight: 700;
+    width: 200px;
+    transition: ease-in-out 0.25s;
+    cursor: pointer;
+}
+
+#icone
+{
+    margin-left: 100px;
+}
+
+header > ul > li > a
+{
+    text-decoration: none;
+    color: white;
+}
+
+header > ul > li:hover
+{
+    transform: scale(1.5);
+    transform: rotatex(720deg);
 }
 
 /* ...Footer related styles... */
@@ -42,7 +70,7 @@ footer
 {
     grid-row: 17/21;
     grid-column: 1 ;
-    background: rgb(105, 224, 111);
+    background:var(--cor-padrao);
 }
 
 #footer {
@@ -54,6 +82,7 @@ footer
 .miniTitle {
     color: white;
     font-weight: bold;
+    font-size: 20px;
     
 }
 
@@ -62,9 +91,84 @@ footer
     flex-direction: column;
 }
 
-.footerMenu > ul {
+.footerMenu > ul {  
     padding: 0 3vh;
 }
+
+
+.fa-facebook {
+    color: rgb(47, 47, 139);
+    --fa-animation-duration: 2s;
+}
+
+#footer .followUs li{
+    margin: 2.5vh;
+    color: white;
+} 
+
+.followUs li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.doubts li a {
+    margin: 2.5vh;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.doubts li a:hover {
+    color: black;
+}
+
+.fa-youtube {
+    color: red;
+    --fa-animation-duration: 2s;
+}
+
+.fa-facebook:hover {
+    --fa-animation-duration: 0.005s;
+}
+
+.fa-youtube:hover {
+    --fa-animation-duration: 0.005s;
+}
+
+.fa-instagram {
+    color: pink;
+    --fa-animation-duration: 2s;
+}
+
+.fa-instagram:hover {
+    --fa-animation-duration: 0.005s;
+}
+
+.fa-linkedin {
+    color: rgb(12, 54, 93);
+    --fa-animation-duration: 2s;
+}
+
+.fa-linkedin:hover {
+    --fa-animation-duration: 0.005s;
+}
+
+.fMenu li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.fMenu li a:hover {
+    color: black;
+    font-size: 26px;
+    text-shadow: 5px 5px 5px;
+} 
+
+#footer ul li {
+    list-style: none;
+}
+/* -- End Footer Styles -- */
 
 #left-button, #right-button
 {
@@ -85,6 +189,22 @@ img
 #left-button 
 {
     grid-row: 5/6;
-    grid-column:20/21;
+    grid-column:11/12;
     margin-left: -5%;
+    
+}
+
+#cartaz
+{    
+    margin: auto;
+    grid-row: 2/10;
+    grid-column:2/11;
+}
+
+#imagem-cartaz
+{
+    height:20%;
+    width:95%;
+    opacity:0.85;
+    border-radius: 10px;
 }
