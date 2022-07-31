@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/79f080f5d5.js" crossorigin="anonymous"></script>
     <title>Tablione-TicketShop</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
         <ul>
             <li><a href="#">Filmes em cartaz</a></li>
             <li><a href="#">Agenda de Eventos</a></li>
-            <li><a href="#"><svg width="88" height="70" viewBox="0 0 88 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <li id="icone"><a href="#"><svg width="88" height="70" viewBox="0 0 88 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M48.8813 0L24.8387 44.1184L57.1823 61.615L81.225 17.4966L48.8813 0ZM74.1767 20.8244L70.1696 28.1774L67.4743 26.7194L71.4814 19.3663L74.1767 20.8244ZM41.5947 29.3809L38.8994 27.9228L42.9065 20.5697L45.6018 22.0278L41.5947 29.3809ZM46.1386 30.6488L56.9198 36.481L49.4064 50.268L38.6252 44.4358L46.1386 30.6488ZM64.4689 32.2342L67.1642 33.6922L63.1571 41.0453L60.4618 39.5872L64.4689 32.2342ZM67.4384 17.1792L59.9251 30.9662L49.1439 25.134L56.6572 11.347L67.4384 17.1792ZM52.6143 9.15993L48.6072 16.513L45.9119 15.0549L49.919 7.70188L52.6143 9.15993ZM35.8941 33.4376L38.5894 34.8957L34.5823 42.2487L31.887 40.7907L35.8941 33.4376ZM53.4494 52.4551L57.4565 45.102L60.1518 46.5601L56.1447 53.9132L53.4494 52.4551Z" fill="#8A8686"/>
                 <path d="M20.7538 19.4444L19.7884 11.4256C19.4379 8.27825 18.0096 5.3766 15.7742 3.2707C13.5389 1.16479 10.6519 0.00101841 7.66063 0L0 0V11.6667H7.66063C7.96092 11.6701 8.24937 11.7912 8.47034 12.0066C8.69132 12.2221 8.82915 12.5166 8.85726 12.8333L14.3632 58.5628C14.7105 61.7125 16.1375 64.6175 18.3733 66.7259C20.609 68.8344 23.4978 69.9995 26.491 70H74.8811L88 19.4444H20.7538ZM66.4827 58.3333H26.491C26.1909 58.3307 25.9024 58.2098 25.6819 57.9941C25.4614 57.7784 25.3245 57.4834 25.2981 57.1667L22.1597 31.1111H73.5487L66.4827 58.3333Z" fill="black"/>
                 </svg></a>
@@ -28,23 +29,37 @@
         <div id="right-button">
             <img src="images/left.png"/>
         </div>
+        <div id="cartaz">
+            <img id = "imagem-cartaz" src="/images/matrix_cover.jpg" />    
+        </div>
         
         
     </main>
     <footer id="footer">
         <div class="footerMenu containerColumn">
             <span class="miniTitle">Menu:</span>
-            <ul>
-                <li><a href="#">Filmes</a></li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Contatos</a></li>
-                <li><a href="#">Sobre nós</a></li>
-            </ul>
+            <ul class="fMenu">
+                <li>&rarr; <a href="#"> Filmes</a></li>
+                <li>&rarr; <a href="#"> Eventos</a></li>
+                <li>&rarr; <a href="#"> Contatos</a></li>
+                <li>&rarr; <a href="#"> Sobre nós</a></li>
+            </ul> 
         </div>
         <div class="footerSocial containerColumn">
             <span class="miniTitle">Siga nossas redes Sociais</span>
-            <ul>
-                <li><a href="#"><img src="" alt="Facebook"></a></li>
+            <ul class="followUs" >
+                <li>&rarr;<a href="#"> <i class="fa-brands fa-facebook fa-2xl fa-spin "></i> </a> Facebook</li>
+                <li>&rarr;<a href="#"> <i class="fa-brands fa-youtube fa-2xl fa-spin"></i> </a> Youtube</li>
+                <li>&rarr;<a href="#"> <i class="fa-brands fa-instagram fa-2xl fa-spin"></i> </a> Instagram</li>
+                <li>&rarr;<a href="#"> <i class="fa-brands fa-linkedin fa-2xl fa-spin"></i> </a> LinkedIn</li>
+            </ul>
+        </div>
+        <div class="footerSocial containerColumn">
+            <span class="miniTitle">Dúvidas e Atendimento</span>
+            <ul class="doubts">
+                <li>&rarr;<a href="#"> Fale conosco</a> </li>
+                <li>&rarr;<a href="#"> Procon</a></li>
+                <li>&rarr;<a href="#"> Preciso de ajuda</a></li>
             </ul>
         </div>
     </footer>
